@@ -181,7 +181,7 @@ hr {
 
     }
     a:hover {
-        background-color: rgb(167, 0, 201);
+        background-color: var(--primary-color);
     }
 
 }
@@ -193,4 +193,84 @@ footer{
     height: 40px;
     background: #3498db;
     color: white;
+}
+
+/*--------------------------------------------------*/
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    main section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 80px 20px 30px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 490px;
+        height: 670px;
+    }
+
+    article {
+        padding: 5px;
+        width: 100%;
+        max-width: 550px;
+    }
+}
+
+/* Teléfonos grandes (phablets) */
+@media (max-width: 850px) {
+    main section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 80px 20px 30px;
+    }
+    .card {
+        width: 100%;
+        max-width: 490px;
+        margin: 0 auto;
+    }
+    article {
+        padding: 5px 5px;
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 550px) {
+    main #about-me {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        margin: 90px 0;
+    }
+
+    .card {
+        max-width: 420px;
+        margin: 10px auto;
+    }
+
+    article {
+        padding: 5px 55px;
+        width: 100%;
+        max-width: 550px;
+        margin: 0px auto;
+    }
+}
+/* Teléfonos muy pequeños (opcional) */
+@media (max-width: 360px) {
+    .card {
+        width: 280px;
+        height: 400px;
+    }
+
+    article {
+        width: 100%;
+        padding: 0 70px;
+    }
+
+    article h2 {
+        font-size: 28px;
+    }
 }
